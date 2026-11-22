@@ -1,0 +1,29 @@
+script_key="CIcwbtFYSFLqtBUdMGEwyCkUAlYsULrM";
+getgenv().Config = {
+    ["ShrineBoost"] = "Luck",
+    ["Webhook"] = {
+        ["URL"] = "https://discord.com/api/webhooks/1299909946145509427/aZZ8Z3jIBkdHQaHTnwsF6Di5h_h5QXN_pEmWP6VpBURa7o41I__Uw-UfGfS9IgoPpsl4",
+        ["Discord Id to ping"] = {"userid"}
+    },
+
+    ["GoldWhenInventoryFull"] = true,
+    ["AutoUseBoost"] = true,
+    ["PetDefense"] = false,
+
+    ["AutoTrade"] = {
+        ["Users"] = {"pahingamuna21"},
+        ["TradeRarities"] = {"Secret"},
+    },
+
+    ["LastEggSettings"] = {
+        deletePets = {"Void Slime", "Cat"},
+        delete_min = 10000,
+        Egg = "Wild West",
+        deleteRarities = {"Common","Uncommon","Rare","Epic","Legendary"},
+        WorldToRebirth = "TimeRift",
+        MinRebirths = 500_000,
+    },
+
+    ["CPU Saver"] = true,
+}
+loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/cfac356e329a61e9398d8b1e5a1cdf9f.lua"))()
